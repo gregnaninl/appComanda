@@ -7,7 +7,7 @@
   </ion-buttons>   
   </ion-navbar>
 </ion-header>
-
+<!--
 <ion-content padding>
 
     <ion-grid>
@@ -23,3 +23,31 @@
 </ion-grid>
 
 </ion-content>
+-->
+
+<ion-content>
+ 
+   <ion-grid >
+      
+     <ion-row >
+ 
+         <ion-col col-12 col-md-2  col-sm-2  offset-md-5 offset-sm-5 >
+             <img  class="logo"  src="assets/imgs/logo.png" /> 
+           </ion-col>
+ 
+         </ion-row >
+           <ion-row >
+       <ion-col class="botones" col-6 col-md-3 col-sm-3   [style.align-items]= "center"  *ngFor="let icono of listadoIconos"  >      
+        <img   [src]="icono.imagen" (click)="iconosClick(icono)" >
+       </ion-col>
+     </ion-row>
+    
+     
+   </ion-grid>
+ 
+  
+ 
+ 
+ </ion-content>
+ 
+

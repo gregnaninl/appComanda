@@ -54,7 +54,33 @@ export class HomePage   implements OnInit {
     spiner.present();
   }
 
+  
+  listadoIconos: any = [
+    {
+        nombre: "pedidos",
+        imagen: "assets/imgs/home/pedidos.png",
+        accion: "PedidosPage"
+    },
+    {
+        nombre: "empleados",
+        imagen: "assets/imgs/home/empleados.png",
+        accion: "EmpleadosPage"
+    },
+    {
+        nombre: "mesas",
+        imagen: "assets/imgs/home/mesas.png",
+        accion: "MesasPage"
+    },
+    {
+        nombre: "menu",
+        imagen: "assets/imgs/home/menu.png",
+        accion: "menu"
+    }
+]
 
+iconosClick(icono){
+
+}
 
 
   cerrarSesionClick(){
